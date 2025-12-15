@@ -42,7 +42,10 @@ test('decrements the count when "Decrement" is clicked', async () => {
     const decrementButton = screen.getByRole('button', { name: /decrement/i });
     // Click it
     await user.click(decrementButton);
+    // await user.click(decrementButton);
+    // await user.click(decrementButton);
+    // await user.click(decrementButton);
 
-    // Assert: Check if "Count: 1" is in the Document
+    // Assert: Check if "Count: -1" is in the Document
     expect(screen.getByText(/Count: -1/i)).toBeInTheDocument();
 });
