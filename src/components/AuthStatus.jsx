@@ -15,7 +15,7 @@ function AuthStatus(){
 
     return (
         <div>
-            <p>Welcome, {user}</p>
+            <p>Welcome, {user.name}</p>
             <button onClick={() => logout()}>Logout</button>
         </div>
     );
